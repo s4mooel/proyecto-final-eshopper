@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Tienda UTADEO — Universidad Jorge Tadeo Lozano</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <div class="logo-area">
+      <img src="img/logo.png" alt="Logo UTADEO">
+      <h1>Tienda UTADEO — Universidad Jorge Tadeo Lozano</h1>
+    </div>
+    <div class="acciones-header">
+      <select id="categoria">
+        <option value="todos">Todas las categorías</option>
+        <option value="Hoodie">Hoodies</option>
+        <option value="Buzo">Buzos</option>
+        <option value="Gorra">Gorras</option>
+      </select>
+
+      <button id="modoOscuroBtn" title="Alternar modo oscuro">🌙</button>
+    </div>
+  </header>
+
+  <main>
+    <section>
+      <h2>Productos</h2>
+      <div id="productos"></div>
+    </section>
+
+    <aside class="carrito">
+      <h2>Carrito 🛒</h2>
+      <ul id="lista-carrito"></ul>
+      <div class="totales">
+        <p>Subtotal: <span id="subtotal-text">$0</span></p>
+        <p>Total: <span id="total-text">$0</span></p>
+      </div>
+      <button id="btn-vaciar">Vaciar</button>
+      <div id="paypal-button-container"></div>
+    </aside>
+  </main>
+
+  <script src="https://www.paypal.com/sdk/js?client-id=sb&currency=COP"></script>
+  <script src="script.js"></script>
+</body>
+</html>
